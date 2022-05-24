@@ -1,3 +1,1 @@
-ls
-cd
-pwd
+Holberton School Project for Mandatory for C#18
