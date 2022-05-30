@@ -2,7 +2,7 @@
 #Create a script that displays numbers from 1 to 100
 for z in {1..100}
 do
-	if [ [ $((z % 5)) -eq 0 ] -a [ $((z % 3)) -eq 0 ] ]
+	if [ $((z % 5)) -eq 0 -a $((z % 3)) -eq 0 ]
 	then
 		echo "FizzBuzz"
 	elif [ $((z % 5)) -eq 0 ]
