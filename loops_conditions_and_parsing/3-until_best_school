@@ -1,4 +1,4 @@
-#!/usr/bin/env bash\
+#!/usr/bin/env bash
 #Create a script that use 'until' loop
 s=1
 until [ ! $s -le 10 ]
