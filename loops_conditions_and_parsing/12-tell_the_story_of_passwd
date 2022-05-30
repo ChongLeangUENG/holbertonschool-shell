@@ -10,6 +10,7 @@ do
 	home=$(echo "$line" | cut -f 6 -d ':')
 	command=$(echo "$line" | cut -f 7 -d ':')
 
+
 	echo -n "The user USERNAME is part of the GROUP_ID gang, "
 	echo -n "lives in HOME_DIRECTORY and rides COMMAND/SHELL. "
 	echo -n "USER ID's place is protected by the passcode PASSWORD, "
