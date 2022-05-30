@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Create a script that display ls-l
+#Create a script that display ls
 for i in *
 do
 echo "$i" | cut -f 2- -d '-'
