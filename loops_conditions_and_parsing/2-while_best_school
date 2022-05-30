@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Create script that use 'while' loop
+m=1
+while [ $m -le 10 ]
+do
+echo 'Best School'
+m=$(( m + 1 ))
+done
