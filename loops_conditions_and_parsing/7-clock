@@ -11,4 +11,4 @@ echo '$minutes'
 ((minutes++))
 done
 ((Hour++))
-done | head -n 70
+done
