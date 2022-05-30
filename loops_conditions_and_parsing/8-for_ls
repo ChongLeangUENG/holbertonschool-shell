@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Create a script that display ls-l
-for i in $(ls -l)
+for i in *
 do
-echo "$i"
+echo "$i" | cut -f 2- -d '-'
 done
