@@ -1,5 +1,5 @@
 #!/use/bin/env bash
-Create a script that use case loop
+#Create a script that use case loop
 t=1
 while [ $t -le 20 ]
 do
