@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 #Create script that tell the story of passwd
-while IFS= read line
+while IFS= read -r line
 do
-	echo "The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO"
+	echo -n "The user $username is part of the $groupID gang, "
+	echo -n "lives in $home and rides $command. "
+	echo -n "$userID's place is protected by the passcode $password, "
+	echo -n "more info about the user here: $userINFO"
 done <"/etc/passwd"
