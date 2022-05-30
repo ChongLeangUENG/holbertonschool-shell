@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Create a script that display ls-l
+for i in $(ls -l)
+do
+echo "$i"
+done
