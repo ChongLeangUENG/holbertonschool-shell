@@ -1,0 +1,8 @@
+#!/usr/bin/env bash\
+#Create a script that use 'until' loop
+s=1
+until [ ! $s -le 10 ]
+do
+echo 'Best School'
+s=$(( s + 1 ))
+done
