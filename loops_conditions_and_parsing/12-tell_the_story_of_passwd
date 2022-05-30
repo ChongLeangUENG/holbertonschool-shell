@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Create script that tell the story of passwd
+while IFS= read -r line
+do
+	echo -n "The user USERNAME is part of the GROUP_ID gang, "
+	echo -n "lives in HOME_DIRECTORY and rides COMMAND/SHELL. "
+	echo -n "USER ID's place is protected by the passcode PASSWORD, "
+	echo "more info about the user here: $userINFO"
+done <"/etc/passwd"
