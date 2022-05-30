@@ -5,7 +5,7 @@ while [ $p -le 10 ]
 do
 echo 'Best School'
 p=$(( p + 1 ))
-if [ $p -eq 9 ]
+if [ $p -eq 10 ]
 then
 echo 'Hi'
 fi
