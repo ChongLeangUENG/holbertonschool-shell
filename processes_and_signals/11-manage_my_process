@@ -2,7 +2,6 @@
 #Create a script that Manage my process
 
 PID=/var/run/my_process.pid
-
 start() {
 	./manage_my_process &
 	echo "$!" > "$PID"
