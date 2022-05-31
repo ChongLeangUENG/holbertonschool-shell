@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Create a Bash script that displays To infinity and beyond With a sleep 2 
 trap 'echo "I am invincible!!!"' SIGTERM
-while
+while :
 do
 	echo "To infinity and beyond"
 	sleep 2
