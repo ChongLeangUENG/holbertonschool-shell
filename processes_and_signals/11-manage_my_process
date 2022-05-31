@@ -12,4 +12,22 @@ stop() {
 	sudo kill -15 "$(cat "$PID")" && rm -f "$PID"
 }
 
+case "$!" in 
+	start)
+		start
+		echo "manage_my_process started"
+		;;
+	stop)
+		stop
+		echo "manage_my_process stopped"
+		;;
+	restart)
+		stop
+		start
+		echo "manage_my_process restarted"
+		;;
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}"
+esac
 
+exit 0
