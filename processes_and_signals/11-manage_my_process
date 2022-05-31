@@ -1,3 +1,15 @@
 #!/use/bin/env bash
 #Create a script that Manage my process
 
+PID=/var/run/my_process.pid
+
+start() {
+	./manage_my_process &
+	echo "$!" > "$PID"
+}
+
+stop() {
+	sudo kill -15 "$(cat "$PID")" && rm -f "$PID"
+}
+
+
