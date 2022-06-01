@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 #Create a script that Manage my process
+. /etc/init.d/DAEMON
 
-PID=/var/run/my_process.pid
+PIDFILE=/var/run/my_process.pid
+
 start() {
 	./manage_my_process &
-	echo "$!" > "$PID"
+	echo "$!" > "$PIDFILE"
 }
 
 stop() {
-	sudo kill -15 "$(cat "$PID")" && rm -f "$PID"
+	sudo kill -15 "$(cat "$PIDFILE")" && rm -f "$PIDFILE"
 }
 
 case "$1" in 
@@ -29,4 +31,4 @@ case "$1" in
 		echo "Usage: manage_my_process {start|stop|restart}"
 esac
 
-exit 0
+exit
