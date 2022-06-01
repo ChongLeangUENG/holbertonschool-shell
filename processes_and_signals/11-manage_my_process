@@ -9,7 +9,7 @@ start() {
 }
 
 stop() {
-	sudo kill -15 "$(cat $PIDFILE)" && rm -f "$PIDFILE" && pkill -9 ./manage_my_process
+	sudo kill -15 "$(cat $PIDFILE)" && rm -f "$PIDFILE"
 }
 
 case "$1" in 
